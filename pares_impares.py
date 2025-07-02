@@ -1,19 +1,31 @@
 pares = 0
 impares = 0
+total = 0
+lista_pares = []
+lista_impares = []
 
 while True:
-    entrada = input("Ingrese un número: ")
+    entrada = input("Ingrese un número o "salir" para terminar ")
     if entrada.lower() == "salir":
         break
+        
     try
         numero = int(entrada)
-        if numero % 2 == 0:
-        pares += 1
         
+        if numero < 0:
+            print("Solo se permiten números positivos.")
+            
+        total += 1
+        if numero % 2 == 0:
+            pares += 1
+            lista_pares.append(numero)
+            
         else:
         impares += 1
-except ValueError:
-         print("Entrada no válida. Escriba un número o 'salir'.")
+        lista_impares.append(numero)
+    except ValueError:
+         print("  Entrada no válida, por favor escriba un número o 'salir'.  ")
 
-print("La cantidad de números pares es:", pares, "y la cantidad de números impares es:", impares)
+print("Total de números ingresados:", total)
+print("Total de números ingresados:", total)
 
