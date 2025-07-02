@@ -5,6 +5,7 @@ while True:
     entrada = input("Ingrese un número: ")
     if entrada.lower() == "salir":
         break
+        
     try
         numero = int(entrada)
         if numero % 2 == 0:
