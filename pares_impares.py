@@ -13,7 +13,7 @@ while True:
         else:
         impares += 1
 except ValueError:
-         print("Entrada no válida. Escriba un número o 'salir'.")
+         print("  Entrada no válida, por favor escriba un número o 'salir'.  ")
 
-print("La cantidad de números pares es:", pares, "y la cantidad de números impares es:", impares)
+print("La cantidad de números pares es: ", pares, "y la cantidad de números impares es: ", impares)
 
